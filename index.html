@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Triton</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script src="actions.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Valve Testing</h1>
+    <p>
+        We are using node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.
+    </p>
+    <div id = "grad">
+        <button id ="PB9" type="button" onclick="valve(this);">PB9</button>
+        <div id = "PB9-status">0V</div><br>
+        <button id ="PB8" type="button" onclick="valve(this);">PB8</button>
+        <div id = "PB8-status">0V</div><br>
+        <button id ="PB7" type="button" onclick="valve(this);">PB7</button>
+        <div id = "PB7-status">0V</div><br>
+        <button id ="PB6" type="button" onclick="valve(this);">PB6</button>
+        <div id = "PB6-status">0V</div><br>
+        <button id ="PB5" type="button" onclick="valve(this);">PB5</button>
+        <div id = "PB5-status">0V</div><br>
+        <button id ="PB4" type="button" onclick="valve(this);">PB4</button>
+        <div id = "PB4-status">0V</div><br>
+    </div>
+    <div id = "press">
+    		PA0
+	    <div id = "PA0">0V</div><br>
+	    PA1
+	    <div id = "PA1">0V</div><br>
+	    PA2
+	    <div id = "PA2">0V</div><br>
+	    PA3
+	    <div id = "PA3">0V</div><br>
+	    PA4
+	    <div id = "PA4">0V</div><br>
+	    PA5
+	    <div id = "PA5">0V</div><br>
+	    PA6
+	    <div id = "PA6">0V</div><br>
+	    PA7
+	    <div id = "PA7">0V</div><br>
+	  
+	    </div>
+
+</body>
+</html>
