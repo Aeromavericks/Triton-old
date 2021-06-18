@@ -12,7 +12,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build-windows-x64": "electron-packager . --out=./bin --prune=true --overwrite --platform=win32 --arch=x64",
+    "build-linux-x64": "electron-packager . --out=./bin --overwrite --prune=true --platform=linux --arch=x64"
   },
   "author": "\"Nihal Kumarswamy\"",
   "license": "ISC"

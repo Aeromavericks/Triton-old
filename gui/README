@@ -1,3 +1,5 @@
 README
 
-
+To build:
+npm run build-windows-x64
+npm run build-linux-x64
