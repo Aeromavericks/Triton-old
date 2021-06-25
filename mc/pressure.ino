@@ -9,7 +9,7 @@ const int sens_8 = PA7;
 const int sens_9 = PB0;
 const int sens_10 = PB1;
 
-const unsigned long BAUD_RATE = 9600;
+const unsigned long BAUD_RATE = 115200;
 
 void setup(){
     pinMode(sens_1, INPUT_ANALOG);
@@ -23,7 +23,7 @@ void setup(){
     pinMode(sens_9, INPUT_ANALOG);
     pinMode(sens_10, INPUT_ANALOG);
 
-    Serial.begin(9600);
+    Serial.begin(BAUD_RATE);
 
 }
 

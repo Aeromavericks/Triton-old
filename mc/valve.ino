@@ -12,7 +12,7 @@ const int valve4 = PB6;
 const int valve5 = PB5;
 const int valve6 = PB4;
 
-const unsigned long BAUD_RATE = 9600;
+const unsigned long BAUD_RATE = 115200;
 
 void setup()
 {
