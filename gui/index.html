@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
     <title>Triton</title>
@@ -7,47 +6,91 @@
     <script src="actions.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Valve Testing</h1>
-    <p>
-        We are using node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
-    </p>
-    <div id = "grad">
-        <button id ="PB9" type="button" onclick="valve(this);">PB9</button>
-        <div id = "PB9-status">0V</div><br>
-        <button id ="PB8" type="button" onclick="valve(this);">PB8</button>
-        <div id = "PB8-status">0V</div><br>
-        <button id ="PB7" type="button" onclick="valve(this);">PB7</button>
-        <div id = "PB7-status">0V</div><br>
-        <button id ="PB6" type="button" onclick="valve(this);">PB6</button>
-        <div id = "PB6-status">0V</div><br>
-        <button id ="PB5" type="button" onclick="valve(this);">PB5</button>
-        <div id = "PB5-status">0V</div><br>
-        <button id ="PB4" type="button" onclick="valve(this);">PB4</button>
-        <div id = "PB4-status">0V</div><br>
+<div class="container">
+
+    <header>
+        <nav>
+
+        </nav>
+        <h1>Valve Testing</h1>
+    </header>
+    
+            <h2>Valves</h2>
+            <main class="main">
+
+                <!--This is the beginning of the switch section-->
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB9"></i><span>PB9</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB9" onclick="valve(this);">
+                        <label for="PB9"></label>
+                    </div>
+                </div>
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB8"></i><span>PB8</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB8">
+                        <label for="PB8"></label>
+                    </div>
+                </div>
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB7"></i><span>PB7</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB7">
+                        <label for="PB7"></label>
+                    </div>
+                </div>
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB6"></i><span>PB6</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB6">
+                        <label for="PB6"></label>
+                    </div>
+                </div>
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB5"></i><span>PB5</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB5">
+                        <label for="PB5"></label>
+                    </div>
+                </div>
+
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i class="PB4"></i><span>PB4</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="PB4">
+                        <label for="PB4"></label>
+                    </div>
+                </div>
+
+            </main>
+
+
+    <aside class="sidebar">
+        <h3>Pressure</h3><br>
+        <p>Pressure to be displayed here.</p>
+    </aside>
+
+
+    <footer>
+        <p>Don't blow anything up</p>
+    </footer>
+
     </div>
-    <div id = "press">
-    		PA0
-	    <div id = "PA0">0V</div><br>
-	    PA1
-	    <div id = "PA1">0V</div><br>
-	    PA2
-	    <div id = "PA2">0V</div><br>
-	    PA3
-	    <div id = "PA3">0V</div><br>
-	    PA4
-	    <div id = "PA4">0V</div><br>
-	    PA5
-	    <div id = "PA5">0V</div><br>
-	    PA6
-	    <div id = "PA6">0V</div><br>
-	    PA7
-	    <div id = "PA7">0V</div><br>
-	  
-	    </div>
-
-
-</body>
-</html>
