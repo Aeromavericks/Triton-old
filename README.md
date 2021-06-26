@@ -1,4 +1,8 @@
-# Some Creative Title Here
+# (Insert Name) Project Documentation
+
+**(code project name here)**  
+**Version** v0.1.xx  
+**Last Edited:** 6/26/21
 
 **README Authors:** Anthony Corneau & Nihal Kumarswamy   
 **University:** The University of Texas at Arlington  
@@ -10,16 +14,20 @@
 
 ## Description of the project’s content
 
-This repository contains my homework, quizzes, and virtually every effort that I have made for 
-Data Science with Python Spring 2021. The structure of the project is the following:  
+This repository contains a code project that does plug and play for interfacing with a Raspberry Pi over IP to a
+controller computer, with sensors connected to the Pi - Nihal please clarify this section, and I will go over it and 
+re-write it into laymans terms
 
-**[GUI README](gui/README.md):**  
-
-**[MC README](mc/README.md):**  
-
-**[Pi README](pi/README.md):**  
+This thang is in three components
 
 
+### Component Documentation
+
+**[GUI README](gui/README.md)**  
+
+**[MC README](mc/README.md)**  
+
+**[Pi README](pi/README.md)**  
 
 
 
