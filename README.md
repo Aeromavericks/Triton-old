@@ -13,14 +13,11 @@
 This repository contains my homework, quizzes, and virtually every effort that I have made for 
 Data Science with Python Spring 2021. The structure of the project is the following:  
 
-***[Homework](Homework/):** This directory contains all my homework submissions, each of which is a folder properly 
-named with homework number, containing the homework submission.  
+**[GUI README](gui/README.md):**  
 
-***[Quiz](Quizzes/):** This directory contains all my quiz submissions, each of which is a folder properly named 
-with quiz number, containing the quiz submission.  
+**[MC README](mc/README.md):**  
 
-***[Exam](Exams/):** This directory contains all my exam submissions, each of which is a folder properly named with 
-exam name or number, containing the exam submission.  
+**[Pi README](pi/README.md):**  
 
 
 
