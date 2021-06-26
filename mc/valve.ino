@@ -12,6 +12,7 @@ const int valve4 = PB6;
 const int valve5 = PB5;
 const int valve6 = PB4;
 
+const int BUILTIN_LED = PC13;
 const unsigned long BAUD_RATE = 115200;
 
 void setup()
@@ -32,6 +33,22 @@ void setup()
    digitalWrite(valve2, LOW);
 
    Serial.begin(BAUD_RATE);
+
+   //Initialization to help Pi differentiate between mc's
+   digitalWrite(BUILTIN_LED, HIGH);
+   while(1){
+      Serial.println("valve");
+      Serial.flush();
+      //Wait for Pi to respond, maybe increase time?
+      delay(5);
+
+      if(Serial.available() > 0){
+         if(Serial.read() == 36)
+         break;
+      }
+   }
+   digitalWrite(BUILTIN_LED, LOW);
+
 }
 
 void loop()

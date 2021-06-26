@@ -9,6 +9,7 @@ const int sens_8 = PA7;
 const int sens_9 = PB0;
 const int sens_10 = PB1;
 
+const int BUILTIN_LED = PC13;
 const unsigned long BAUD_RATE = 115200;
 
 void setup(){
@@ -24,6 +25,21 @@ void setup(){
     pinMode(sens_10, INPUT_ANALOG);
 
     Serial.begin(BAUD_RATE);
+
+    //Initialization to help Pi differentiate between mc's
+    digitalWrite(BUILTIN_LED, HIGH);
+    while(1){
+      Serial.println("pressure");
+      Serial.flush();
+      //Wait for Pi to respond, maybe increase time?
+      delay(5);
+
+      if(Serial.available() > 0){
+         if(Serial.read() == 36)
+         break;
+      }
+   }
+   digitalWrite(BUILTIN_LED, LOW);
 
 }
 
@@ -48,5 +64,6 @@ void loop(){
                     ', '+sens_5_val+', '+sens_6_val+', '+sens_7_val+', '+sens_8_val+', '+
                     sens_9_val+', '+sens_10_val);
     
+    Serial.flush();
     delay(5);
 }
