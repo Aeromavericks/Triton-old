@@ -18,8 +18,10 @@ for x in ports:
 for x in port:
     ser = serial.Serial(x)
     if ser.readline().decode() == 'pressure\n':
+        ser.write('$\n'.encode())
         pressure_ser = ser 
     else:
+        ser.write('$\n'.encode())
         valve_ser = ser 
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
