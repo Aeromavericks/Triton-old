@@ -2,7 +2,8 @@
 
 **(code project name here)**  
 **Version** v0.1.xx  
-**Last Edited:** 6/26/21
+**Last Edited:** 6/26/21  
+**License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL)  
 
 **README Authors:** Anthony Corneau & Nihal Kumarswamy   
 **University:** The University of Texas at Arlington  
