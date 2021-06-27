@@ -15,8 +15,6 @@ for x in ports:
 #TODO: Read port and Server.send() (p0, p1, p2, valve)
 #      Server.get() If == 'valve' switch valve position
 
-
-
 for x in port:
     ser = serial.Serial(x)
     if ser.readline().decode() == 'pressure\n':
@@ -32,6 +30,7 @@ server.bind(('', 5000))
 server.listen()
 
 conn, addr = server.accept()
+conn.setblocking(False)
 
 while True:
     data = conn.recv(100).decode()
@@ -47,3 +46,7 @@ while True:
         valve_ser.write('E'.encode())
     elif data[2] == '4':
         valve_ser.write('F'.encode())
+    
+    data = pressure_ser.readline()
+    if data:
+        conn.sendall(data.encode())
