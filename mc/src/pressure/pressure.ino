@@ -59,35 +59,35 @@ void loop(){
     sens_9_val = analogRead(sens_9);
     sens_10_val = analogRead(sens_10);
 
-    Serial.print("P1: ")
-    Serial.println(sens_1_val)
+    Serial.print("P1: ");
+    Serial.println(sens_1_val);
 
-    Serial.print("P2: ")
-    Serial.println(sens_2_val)
+    Serial.print("P2: ");
+    Serial.println(sens_2_val);
 
-    Serial.print("P3: ")
-    Serial.println(sens_3_val)
+    Serial.print("P3: ");
+    Serial.println(sens_3_val);
 
-    Serial.print("P4: ")
-    Serial.println(sens_4_val)
+    Serial.print("P4: ");
+    Serial.println(sens_4_val);
 
-    Serial.print("P5: ")
-    Serial.println(sens_5_val)
+    Serial.print("P5: ");
+    Serial.println(sens_5_val);
 
-    Serial.print("P6: ")
-    Serial.println(sens_6_val)
+    Serial.print("P6: ");
+    Serial.println(sens_6_val);
 
-    Serial.print("P7: ")
-    Serial.println(sens_7_val)
+    Serial.print("P7: ");
+    Serial.println(sens_7_val);
 
-    Serial.print("P8: ")
-    Serial.println(sens_8_val)
+    Serial.print("P8: ");
+    Serial.println(sens_8_val);
 
-    Serial.print("P9: ")
-    Serial.println(sens_9_val)
+    Serial.print("P9: ");
+    Serial.println(sens_9_val);
 
-    Serial.print("P10: ")
-    Serial.println(sens_10_val)
+    Serial.print("P10: ");
+    Serial.println(sens_10_val);
     
     Serial.flush();
     delay(5);
