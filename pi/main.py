@@ -16,6 +16,7 @@ for x in ports:
 #      Server.get() If == 'valve' switch valve position
 
 
+
 for x in port:
     ser = serial.Serial(x)
     if ser.readline().decode() == 'pressure\n':
