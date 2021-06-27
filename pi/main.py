@@ -46,7 +46,8 @@ while True:
         valve_ser.write('E'.encode())
     elif data[2] == '4':
         valve_ser.write('F'.encode())
-    
+        
+    pressure_ser.flush()
     data = pressure_ser.readline()
     if data:
         conn.sendall(data.encode())
