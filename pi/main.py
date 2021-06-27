@@ -4,16 +4,23 @@ import socket
 
 ports = list(serial.tools.list_ports.comports())
 
-port = ''
+port = []
+pressure_ser = None
+valve_ser = None 
 
 for x in ports:
     if 'Maple' in x.description:
-        port = x.device 
+            port.append = x.device 
 
 #TODO: Read port and Server.send() (p0, p1, p2, valve)
 #      Server.get() If == 'valve' switch valve position
 
-ser = serial.Serial(port)
+for x in port:
+    ser = serial.Serial(x)
+    if ser.readline().decode() == 'pressure\n':
+        pressure_ser = ser 
+    else:
+        valve_ser = ser 
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -25,18 +32,14 @@ conn, addr = server.accept()
 while True:
     data = conn.recv(100).decode()
     if data[2] == '9':
-        ser.write('A'.encode())
+        valve_ser.write('A'.encode())
     elif data[2] == '8':
-        ser.write('B'.encode())
+        valve_ser.write('B'.encode())
     elif data[2] == '7':
-        ser.write('C'.encode())
+        valve_ser.write('C'.encode())
     elif data[2] == '6':
-        ser.write('D'.encode())
+        valve_ser.write('D'.encode())
     elif data[2] == '5':
-        ser.write('E'.encode())
+        valve_ser.write('E'.encode())
     elif data[2] == '4':
-        ser.write('F'.encode())
-
-    pressure = ser.read()
-    if pressure && type(pressure) = float:
-        conn.send(pressure)
+        valve_ser.write('F'.encode())
