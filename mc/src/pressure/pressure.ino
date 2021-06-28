@@ -39,7 +39,8 @@ void setup(){
          break;
       }
    }
-   digitalWrite(BUILTIN_LED, LOW);
+    Serial.flush()
+    digitalWrite(BUILTIN_LED, LOW);
 
 }
 
