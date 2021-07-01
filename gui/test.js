@@ -1,7 +1,7 @@
 const net = require('net')
 
 const port = 5000;
-const host = '192.168.1.5'
+const host = '192.168.0.140'
 
 const client = new net.Socket();
 client.connect({port: port, host:host}), function(){
@@ -16,4 +16,4 @@ client.on('data', function(data){
   console.log(data.toString());
 })
 
-client.write('Hello server');
+client.write('PB9');

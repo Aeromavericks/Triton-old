@@ -32,14 +32,14 @@ void setup(){
       Serial.println("pressure");
       Serial.flush();
       //Wait for Pi to respond, maybe increase time?
-      delay(5);
+      delay(100);
 
       if(Serial.available() > 0){
          if(Serial.read() == 36)
          break;
       }
    }
-    Serial.flush()
+    Serial.flush();
     digitalWrite(BUILTIN_LED, LOW);
 
 }

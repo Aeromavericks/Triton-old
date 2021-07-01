@@ -1,44 +1,46 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
-const net = require('net')
+const { app, BrowserWindow, ipcMain, } = require('electron');
+const net = require('net');
 
 const port = 5001;
-const host = '192.168.0.140'
+const host = '192.168.0.140';
 
 const client = new net.Socket();
 client.connect({port: port, host:host}), function(){
   console.log('Connected');
-}
+};
 
 client.on('error', function(ex){
     console.log(ex);
-})
+});
 
+//https://icon-icons.com/users/wiyPiuz6JoXIZH9xL2L8k/icon-sets/
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
     center: true,
+    icon: 'icon.png',
     webPreferences: {
       nodeIntegration: true
     }
-  })
-
-  
-  win.loadFile('index.html')
+  });
+  win.maximize();
+  //win.setMenuBarVisibility(false);
+  win.loadFile('index.html');
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
-    app.quit()
+    app.quit();
   }
   client.destroy();
 })
 
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow()
+    createWindow();
   }
 })
 

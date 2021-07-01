@@ -17,7 +17,8 @@ for x in ports:
 
 for x in port:
     ser = serial.Serial(x)
-    if ser.readline().decode() == 'pressure\n':
+    ser.reset_input_buffer()
+    if ser.readline() == b'pressure\r\n':
         ser.write('$\n'.encode())
         pressure_ser = ser 
     else:
@@ -30,24 +31,31 @@ server.bind(('', 5000))
 server.listen()
 
 conn, addr = server.accept()
-conn.setblocking(False)
 
 while True:
-    data = conn.recv(100).decode()
-    if data[2] == '9':
-        valve_ser.write('A'.encode())
-    elif data[2] == '8':
-        valve_ser.write('B'.encode())
-    elif data[2] == '7':
-        valve_ser.write('C'.encode())
-    elif data[2] == '6':
-        valve_ser.write('D'.encode())
-    elif data[2] == '5':
-        valve_ser.write('E'.encode())
-    elif data[2] == '4':
-        valve_ser.write('F'.encode())
+    data = ''
+    conn.settimeout(5)
+    try:
+        data = conn.recv(100).decode()
+    except:
+        print('No valve command, skipping')
+    conn.settimeout(0)
 
-    pressure_ser.flush()
+    if data: 
+        if data[2] == '9':
+            valve_ser.write('A'.encode())
+        elif data[2] == '8':
+            valve_ser.write('B'.encode())
+        elif data[2] == '7':
+            valve_ser.write('C'.encode())
+        elif data[2] == '6':
+            valve_ser.write('D'.encode())
+        elif data[2] == '5':
+            valve_ser.write('E'.encode())
+        elif data[2] == '4':
+            valve_ser.write('F'.encode())
+
+    pressure_ser.reset_input_buffer()
     data = pressure_ser.readline()
     if data:
         conn.sendall(data.encode())
