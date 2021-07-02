@@ -2,14 +2,15 @@
 
 **(code project name here)**  
 **Version** v0.1.xx  
-**Last Edited:** 6/26/21  
-**License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL)  
+**Last Edited:** 7/1/21  
+**License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL),
+[License File](LICENSE.md)
 
-**README Authors:** Anthony Corneau & Nihal Kumarswamy   
+**Readme Authors:** Anthony Corneau & Nihal Kumarswamy   
 **University:** The University of Texas at Arlington  
-**Departments:** Aerospace Engineering, Mechanical Engineering, & Industrial Engineering  
+**Departments:** Aerospace and Mechanical Engineering, Industrial Engineering  
 **Team Name:** Aero Mavericks, Liquid Rocket Engine Division (LRE)  
-**Team Email:** [aeromavs@gmail.com](aeromavs@gmail.com)  
+**Team Email:** aeromavs@gmail.com  
 **Team Webpage:** [AeroMavs LRE](https://aeromavs.weebly.com/about.html)  
 ![Logo](.readme/aeromavs-circle_1.png)
 
@@ -37,6 +38,3 @@ Nihal Kumarswamy
 nihal.kumarswamy@mavs.uta.edu  
 
 > Ad Astra!
-
-
-### End of README's Content
