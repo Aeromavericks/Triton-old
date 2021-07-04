@@ -1,16 +1,21 @@
 const { app, BrowserWindow, ipcMain, } = require('electron');
 const net = require('net');
 
-const port = 5001;
+const port = 5000;
 const host = '192.168.0.140';
 
 const client = new net.Socket();
+
 client.connect({port: port, host:host}), function(){
   console.log('Connected');
 };
 
 client.on('error', function(ex){
     console.log(ex);
+});
+
+client.on('data', function(data){
+  console.log(data);
 });
 
 //https://icon-icons.com/users/wiyPiuz6JoXIZH9xL2L8k/icon-sets/

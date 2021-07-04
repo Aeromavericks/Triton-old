@@ -16,4 +16,5 @@ client.on('data', function(data){
   console.log(data.toString());
 })
 
-client.write('PB9');
+//TODO: Run this with no write, test what happens when sending multiple data packets from Pi
+//client.write('PB9');

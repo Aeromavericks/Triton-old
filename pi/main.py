@@ -21,7 +21,7 @@ for x in port:
     if ser.readline() == b'pressure\r\n':
         ser.write('$\n'.encode())
         pressure_ser = ser 
-    else:
+    else if ser.readline() == b'valve\r\n':
         ser.write('$\n'.encode())
         valve_ser = ser 
 
