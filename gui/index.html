@@ -86,6 +86,37 @@
     <aside class="sidebar">
         <h3>Pressure</h3><br>
         <p>Pressure to be displayed here.</p>
+        <hr>
+        <!--https://canvas-gauges.com/-->
+        <button onclick="animateGauges()">Animate</button>
+        <button onclick="resetGaugesAnimation()">Reset animation</button>
+        <hr>
+        <script src="node_modules/canvas-gauges/gauge.min.js"></script>
+        <script src="pressure.js"></script>
+        <canvas data-type="radial-gauge"
+                data-width="300"
+                data-height="300"
+                data-units="Psi"
+                data-min-value="0"
+                data-max-value="1000"
+                data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                data-minor-ticks="10"
+                data-stroke-ticks="true"
+                data-highlights='[
+                    {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                ]'
+                data-color-plate="#fff"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="arrow"
+                data-needle-width="2"
+                data-needle-circle-size="7"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="500"
+                data-animation-rule="linear">
+        <script src="pressure.js"></script>
+
     </aside>
 
 
