@@ -11,26 +11,23 @@
 **Departments:** Aerospace and Mechanical Engineering, Industrial Engineering  
 **Team Name:** Aero Mavericks, Liquid Rocket Engine Division (LRE)  
 **Team Email:** aeromavs@gmail.com  
-**Team Webpage:** [AeroMavs LRE](https://aeromavs.weebly.com/about.html)  
+**Team Webpage:** [Aero Mavericks LRE](https://aeromavs.weebly.com/about.html)  
 ![Logo](.readme/aeromavs-circle_1.png)
 
 ## Description of the project’s content
 
 This repository contains a code project that is a lightweight, highly extensible 
 application that allows for plug and play for interfacing with a Raspberry Pi 
-over IP to a controller computer, with sensors connected to the Pi - Nihal 
-please clarify this section, and I will go over it and re-write it into laymans terms
-
-This thang is in three components
+over IP to a controller computer, with sensors connected to the Pi 
 
 
 ### Component Documentation
 
-**[GUI README](gui/README.md)**  
+**[GUI README](gui/gui_README.md)**  
 
-**[MC README](mc/README.md)**  
+**[MC README](mc/mc_README.md)**  
 
-**[Pi README](pi/README.md)**  
+**[Pi README](pi/pi_README.md)**  
 
 
 
