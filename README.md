@@ -1,6 +1,6 @@
-# (Insert Name) Project Documentation
+# Triton Monitoring and Control Software(TMCS) Project Documentation
 
-**(code project name here)**  
+**Triton Monitoring and Control Software(TMCS)**  
 **Version** v0.1.xx  
 **Last Edited:** 7/1/21  
 **License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL),
