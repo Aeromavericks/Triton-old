@@ -4,12 +4,12 @@
 
 ## Description of the GUI
 
-This repository contains a code project that is a lightweight, highly extensible 
+<!-- This repository contains a code project that is a lightweight, highly extensible 
 application that allows for plug and play for interfacing with a Raspberry Pi 
 over IP to a controller computer, with sensors connected to the Pi - Nihal 
 please clarify this section, and I will go over it and re-write it into laymans terms
 
-This thang is in three components
+This thang is in three components -->
 
 
 
@@ -24,10 +24,10 @@ After installing, ensure you are NOT pushing your node_modules folder
     npm run build-windows-x64  
     npm run build-linux-x64  
 
+# To install from releases
+    Add instructions to install from releases
 
 
 For questions and troubleshooting, please contact:  
 Nihal Kumarswamy  
 nihal.kumarswamy@mavs.uta.edu  
-
-
