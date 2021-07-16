@@ -16,7 +16,7 @@ This folder contains python programs used on the Pi to connect with the microcon
 The Pyserial library is used to interface with the microcontrollers over USB. 
 The Pi routinely receives analog readings and sends commands to control the valves via a serial connection with the microcontrollers. 
 
-The socket module is used to create a TCP server that users can connect to. The server listens for commands to control the valves and sends the latest sensor readings. 
+The socket module is used to create a TCP server that users can connect to. The server listens for commands to control the valves and sends the latest sensor readings. Uses multi-threading to accept and serve multiple users.
 
 For questions and troubleshooting, please contact:  
 Nihal Kumarswamy  
