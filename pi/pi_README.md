@@ -18,6 +18,8 @@ The Pi routinely receives analog readings and sends commands to control the valv
 
 The socket module is used to create a TCP server that users can connect to. The server listens for commands to control the valves and sends the latest sensor readings. Uses multi-threading to accept and serve multiple users.
 
+The Pi is assigned a static IP address to help users connect to the TCP server. 
+
 For questions and troubleshooting, please contact:  
 Nihal Kumarswamy  
 nihal.kumarswamy@mavs.uta.edu  
