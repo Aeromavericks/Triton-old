@@ -2,7 +2,7 @@
 
 **Triton Monitoring and Control Software(TMCS)**  
 **Version** v0.1.xx  
-**Last Edited:** 7/1/21  
+**Last Edited:** 7/16/21  
 **License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL),
 [License File](LICENSE.md)
 
