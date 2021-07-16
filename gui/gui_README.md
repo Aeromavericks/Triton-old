@@ -11,7 +11,8 @@ please clarify this section, and I will go over it and re-write it into laymans 
 
 This thang is in three components -->
 
-
+This folder contains a program built on electron.js to aid users perform specific actions to control any connected valves or receive readings from the connected sensors. 
+The program uses the net library to connect to a TCP server running on a Pi. The computer running the program is on the same LAN connection as the Pi. 
 
 # To install Node.js
 Better instructions here: https://nodejs.org/
