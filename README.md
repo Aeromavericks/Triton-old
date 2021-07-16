@@ -1,6 +1,7 @@
 # Triton Monitoring and Control Software(TMCS) Project Documentation
 
 **Triton Monitoring and Control Software(TMCS)**  
+<!-- Can we auto-update the version from Git Tag and the last edited? -->
 **Version** v0.1.xx  
 **Last Edited:** 7/16/21  
 **License:** [GNU GPL](https://www.gnu.org/licenses/licenses.html#GPL),
