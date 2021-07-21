@@ -4,6 +4,7 @@
   "description": "Application to monitor data for the Triton engine.",
   "main": "main.js",
   "dependencies": {
+    "canvas-gauges": "^2.1.7-radial",
     "electron": "^11.4.7",
     "electron-packager": "^15.2.0",
     "electron-squirrel-startup": "^1.0.0",
