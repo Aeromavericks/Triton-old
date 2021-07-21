@@ -138,9 +138,125 @@ footer {
     }
 
 /* Sidebar */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 1px;
+  }
 
+    .grid-item {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px;
+        text-align: center;
+    }
 
+    .grid-item-manifoldandtanks {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px;
+        text-align: center;
+    }
+        .grid-container-manifoldandtanks {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 1px;
+        }
+            .grid-item-manifold {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 1px;
+                font-size: 30px;
+            }
+            .grid-item-tanks {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 1px;
+                font-size: 30px; 
+            }
+                .grid-container-N2Otank {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    background-color: white;
+                    padding-bottom: 50px;
+                }
+                    .grid-item-N2Oweight {
+                        display: grid;
+                        justify-content: center;
+                        align-content: center;
+                        background-color: white;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        padding: 1px;
+                        font-size: 30px; 
+                    }
+                    .grid-item-N2Otemp {
+                        display: grid;
+                        justify-content: center;
+                        align-content: center;
+                        background-color: white;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        padding: 1px;
+                        font-size: 30px; 
+                    }
 
+    .grid-item-venturiandchamber {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px; 
+    }
+        .grid-container-venturiandchamber {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 1px;
+        }
+            .grid-item-venturis {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 30px;
+                font-size: 30px; 
+            }
+
+                .grid-container-venturi1 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: white;
+                    padding-bottom: 50px;
+                }
+        
+                .grid-container-venturi2 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: white;
+                    padding-top: 50px;
+                }
+
+            .grid-item-chamber {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 30px;
+                font-size: 30px; 
+            }
 /* Footer */
 
 footer {

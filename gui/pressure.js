@@ -1,6 +1,6 @@
 
 
-//This script currently animated the pressure gauge at the push of a button,
+//This script is currently animating the pressure gauge at the push of a button,
 //but the concept works. The gauge is able to be animated through this code and the value given to
 //the animation is a variable.
 
@@ -58,4 +58,3 @@ function setText() {
         gauge.update({ valueText: text });
     });
 }
-var pressureOne = 100;

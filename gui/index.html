@@ -93,28 +93,228 @@
         <hr>
         <script src="node_modules/canvas-gauges/gauge.min.js"></script>
         <script src="pressure.js"></script>
-        <canvas data-type="radial-gauge"
-                data-width="300"
-                data-height="300"
-                data-units="Psi"
-                data-min-value="0"
-                data-max-value="1000"
-                data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
-                data-minor-ticks="10"
-                data-stroke-ticks="true"
-                data-highlights='[
-                    {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
-                ]'
-                data-color-plate="#fff"
-                data-border-shadow-width="0"
-                data-borders="false"
-                data-needle-type="arrow"
-                data-needle-width="2"
-                data-needle-circle-size="7"
-                data-needle-circle-outer="true"
-                data-needle-circle-inner="false"
-                data-animation-duration="500"
-                data-animation-rule="linear">
+        <div class="grid-container">
+            <div class="grid-item-manifoldandtanks">
+                <div class="grid-container-manifoldandtanks">
+                    <div class="grid-item-manifold">
+                        <div class="pressure-gauges">
+                            <canvas data-type="radial-gauge"
+                                    data-width="200"
+                                    data-height="200"
+                                    data-units="Ar Manifold [psi]"
+                                    data-start-angle="90"
+                                    data-ticks-angle="180"
+                                    data-min-value="0"
+                                    data-max-value="1000"
+                                    data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                    data-minor-ticks="10"
+                                    data-stroke-ticks="true"
+                                    data-highlights='[
+                                        {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                    ]'
+                                    data-color-plate="#fff"
+                                    data-border-shadow-width="0"
+                                    data-borders="false"
+                                    data-needle-type="arrow"
+                                    data-needle-width="2"
+                                    data-needle-circle-size="7"
+                                    data-needle-circle-outer="true"
+                                    data-needle-circle-inner="false"
+                                    data-animation-duration="500"
+                                    data-animation-rule="linear">
+                        </div>
+                    </div>
+                    <div class="grid-item-tanks">
+                        <div class="pressure-gauges">
+                            <canvas data-type="radial-gauge"
+                                    data-width="300"
+                                    data-height="300"
+                                    data-units="N2O Tank [psi]"
+                                    data-start-angle="90"
+                                    data-ticks-angle="180"
+                                    data-min-value="0"
+                                    data-max-value="1000"
+                                    data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                    data-minor-ticks="10"
+                                    data-stroke-ticks="true"
+                                    data-highlights='[
+                                        {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                    ]'
+                                    data-color-plate="#fff"
+                                    data-border-shadow-width="0"
+                                    data-borders="false"
+                                    data-needle-type="arrow"
+                                    data-needle-width="2"
+                                    data-needle-circle-size="7"
+                                    data-needle-circle-outer="true"
+                                    data-needle-circle-inner="false"
+                                    data-animation-duration="500"
+                                    data-animation-rule="linear">
+                            </div>
+                            <div class="grid-container-N2Otank">
+                                <div class="N2Oweight">
+                                    <p>Weight</p>
+                                </div>
+                                <div class="N2Otemp">
+                                    <p>Temp</p>
+                                </div>
+                            </div>
+                        <div class="pressure-gauges">
+                            <canvas data-type="radial-gauge"
+                                    data-width="300"
+                                    data-height="300"
+                                    data-units="Kerosene Tank [psi]"
+                                    data-start-angle="90"
+                                    data-ticks-angle="180"
+                                    data-min-value="0"
+                                    data-max-value="1000"
+                                    data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                    data-minor-ticks="10"
+                                    data-stroke-ticks="true"
+                                    data-highlights='[
+                                        {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                    ]'
+                                    data-color-plate="#fff"
+                                    data-border-shadow-width="0"
+                                    data-borders="false"
+                                    data-needle-type="arrow"
+                                    data-needle-width="2"
+                                    data-needle-circle-size="7"
+                                    data-needle-circle-outer="true"
+                                    data-needle-circle-inner="false"
+                                    data-animation-duration="500"
+                                    data-animation-rule="linear">
+                        </div>
+                    </div>    
+                </div> 
+            </div>
+            <div class="grid-item-venturiandchamber">
+                <div class="grid-container-venturiandchamber">
+                    <div class="grid-item-venturis">
+                        <div class= "grid-container-venturi1">
+                            <div class="grid-item">
+                                <div class="pressure-gauges">
+                                    <canvas data-type="radial-gauge"
+                                            data-width="200"
+                                            data-height="200"
+                                            data-units="N2O Venturi Upstream [psi]"
+                                            data-start-angle="90"
+                                            data-ticks-angle="180"
+                                            data-min-value="0"
+                                            data-max-value="1000"
+                                            data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                            data-minor-ticks="10"
+                                            data-stroke-ticks="true"
+                                            data-highlights='[
+                                                {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                            ]'
+                                            data-color-plate="#fff"
+                                            data-border-shadow-width="0"
+                                            data-borders="false"
+                                            data-needle-type="arrow"
+                                            data-needle-width="2"
+                                            data-needle-circle-size="7"
+                                            data-needle-circle-outer="true"
+                                            data-needle-circle-inner="false"
+                                            data-animation-duration="500"
+                                            data-animation-rule="linear">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="pressure-gauges">
+                                    <canvas data-type="radial-gauge"
+                                            data-width="200"
+                                            data-height="200"
+                                            data-units="N2O Venturi Downstream [psi]"
+                                            data-start-angle="90"
+                                            data-ticks-angle="180"
+                                            data-min-value="0"
+                                            data-max-value="1000"
+                                            data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                            data-minor-ticks="10"
+                                            data-stroke-ticks="true"
+                                            data-highlights='[
+                                                {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                            ]'
+                                            data-color-plate="#fff"
+                                            data-border-shadow-width="0"
+                                            data-borders="false"
+                                            data-needle-type="arrow"
+                                            data-needle-width="2"
+                                            data-needle-circle-size="7"
+                                            data-needle-circle-outer="true"
+                                            data-needle-circle-inner="false"
+                                            data-animation-duration="500"
+                                            data-animation-rule="linear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "grid-container-venturi2">
+                            <div class="grid-item">
+                                <div class="pressure-gauges">
+                                    <canvas data-type="radial-gauge"
+                                            data-width="200"
+                                            data-height="200"
+                                            data-units="Kero Venturi Upstream [psi]"
+                                            data-start-angle="90"
+                                            data-ticks-angle="180"
+                                            data-min-value="0"
+                                            data-max-value="1000"
+                                            data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                            data-minor-ticks="10"
+                                            data-stroke-ticks="true"
+                                            data-highlights='[
+                                                {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                            ]'
+                                            data-color-plate="#fff"
+                                            data-border-shadow-width="0"
+                                            data-borders="false"
+                                            data-needle-type="arrow"
+                                            data-needle-width="2"
+                                            data-needle-circle-size="7"
+                                            data-needle-circle-outer="true"
+                                            data-needle-circle-inner="false"
+                                            data-animation-duration="500"
+                                            data-animation-rule="linear">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="pressure-gauges">
+                                    <canvas data-type="radial-gauge"
+                                            data-width="200"
+                                            data-height="200"
+                                            data-units="Kero Venturi Downstream [psi]"
+                                            data-start-angle="90"
+                                            data-ticks-angle="180"
+                                            data-min-value="0"
+                                            data-max-value="1000"
+                                            data-major-ticks="0,100,200,300,400,500,600,700,800,900,1000"
+                                            data-minor-ticks="10"
+                                            data-stroke-ticks="true"
+                                            data-highlights='[
+                                                {"from": 600, "to": 1000, "color": "rgba(200, 50, 50, .75)"}
+                                            ]'
+                                            data-color-plate="#fff"
+                                            data-border-shadow-width="0"
+                                            data-borders="false"
+                                            data-needle-type="arrow"
+                                            data-needle-width="2"
+                                            data-needle-circle-size="7"
+                                            data-needle-circle-outer="true"
+                                            data-needle-circle-inner="false"
+                                            data-animation-duration="500"
+                                            data-animation-rule="linear">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-chamber">
+                        <p>Thrust</p>
+                        <p>Temp</p>
+                    </div>  
+                </div>
+            </div>   
+        </div>
         <script src="pressure.js"></script>
 
     </aside>
