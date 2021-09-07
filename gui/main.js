@@ -48,3 +48,16 @@ ipcMain.on('valve', function(event, args){
   client.write(args['args']['pin']+args['args']['state']);
   //console.log(args['args'].toString())
 })
+
+$(document).ready(function(){
+  
+  var mc = {
+    '0-19'     : 'red',
+    '20-59'    : 'orange',
+    '60-100'   : 'green'
+  };
+  
+function between(x, min, max) {
+  return x >= min && x <= max;
+}
+

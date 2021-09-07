@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Triton</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <script src="actions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/assets/favicon.ico">
+
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 <div class="container">
 
     <header>
@@ -18,7 +22,8 @@
             <h2>Valves</h2>
             <main class="main">
 
-                <!--This is the beginning of the switch section-->
+ 
+				<!--This is the beginning of the switch section-->
 
                 <div class="switch-holder">
                     <div class="switch-label">
@@ -85,12 +90,155 @@
 
     <aside class="sidebar">
         <h3>Pressure</h3><br>
-        <p>Pressure to be displayed here.</p>
-    </aside>
+              <p>Pressure to be displayed here.</p>
+				<!--This is the beginning of the gauge section-->
+				<div class="row">
+					<div class="gauge_1 column" id="gauge_1">
+						<div class="gauge__body">
+							<div gauge-color="19" class="gauge__fill_1"></div>
+							<div class="gauge__cover_1"></div>
+						</div>
+					</div>
+					
+					<div class="gauge_2 column" id="gauge_2">
+						<div class="gauge__body">
+							<div class="gauge__fill_2"></div>
+							<div class="gauge__cover_2"></div>
+						</div>
+					</div>
 
+					<div class="gauge_3 column" id="gauge_3">
+						<div class="gauge__body">
+							<div class="gauge__fill_3"></div>
+							<div class="gauge__cover_3"></div>
+						</div>
+					</div>
+				</div>		
+
+				<div class="row">
+					<div class="gauge_4 column" id="gauge_4">
+						<div class="gauge__body">
+							<div class="gauge__fill_4"></div>
+							<div class="gauge__cover_4"></div>
+						</div>
+					</div>
+
+					<div class="gauge_5 column" id="gauge_5">
+						<div class="gauge__body">
+							<div class="gauge__fill_5"></div>
+							<div class="gauge__cover_5"></div>
+						</div>
+					</div>
+					
+					<div class="gauge_6 column" id="gauge_6">
+						<div class="gauge__body">
+							<div class="gauge__fill_6"></div>
+							<div class="gauge__cover_6"></div>
+						</div>
+					</div>
+				</div>       	
+			
+    </aside>
+<script>
+const gauge_1Element = document.querySelector(".gauge_1");
+
+function setGauge_1Value(gauge_1, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_1.querySelector(".gauge__fill_1").style.transform = `rotate(${value / 2}turn)`;
+  gauge_1.querySelector(".gauge__cover_1").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_1Value(gauge_1Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gauge_2Element = document.querySelector(".gauge_2");
+
+function setGauge_2Value(gauge_2, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_2.querySelector(".gauge__fill_2").style.transform = `rotate(${value / 2}turn)`;
+  gauge_2.querySelector(".gauge__cover_2").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_2Value(gauge_2Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gauge_3Element = document.querySelector(".gauge_3");
+
+function setGauge_3Value(gauge_3, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_3.querySelector(".gauge__fill_3").style.transform = `rotate(${value / 2}turn)`;
+  gauge_3.querySelector(".gauge__cover_3").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_3Value(gauge_3Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gauge_4Element = document.querySelector(".gauge_4");
+
+function setGauge_4Value(gauge_4, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_4.querySelector(".gauge__fill_4").style.transform = `rotate(${value / 2}turn)`;
+  gauge_4.querySelector(".gauge__cover_4").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_4Value(gauge_4Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gauge_5Element = document.querySelector(".gauge_5");
+
+function setGauge_5Value(gauge_5, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_5.querySelector(".gauge__fill_5").style.transform = `rotate(${value / 2}turn)`;
+  gauge_5.querySelector(".gauge__cover_5").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_5Value(gauge_5Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gauge_6Element = document.querySelector(".gauge_6");
+
+function setGauge_6Value(gauge_6, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge_6.querySelector(".gauge__fill_6").style.transform = `rotate(${value / 2}turn)`;
+  gauge_6.querySelector(".gauge__cover_6").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGauge_6Value(gauge_6Element, 0.3);
+/*---------------------------------------------------------------------------------*/
+const gaugeElement = document.querySelector(".gauge");
+
+function setGaugeValue(gauge, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge.querySelector(".gauge__fill").style.transform = `rotate(${value / 2}turn)`;
+  gauge.querySelector(".gauge__cover").textContent = `${Math.round(value * 100)}%`;
+}
+
+setGaugeValue(gaugeElement, 0.3);
+/*---------------------------------------------------------------------------------*/
+
+</script>
 
     <footer>
         <p>Don't blow anything up</p>
     </footer>
 
     </div>
+<script src="actions.js"></script>
+</body>
+</html>
