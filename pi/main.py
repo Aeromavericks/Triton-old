@@ -38,5 +38,5 @@ while True:
         ser.write('F'.encode())
 
     pressure = ser.read()
-    if pressure && type(pressure) = float:
+    if pressure & type(pressure) == float:
         conn.send(pressure)
