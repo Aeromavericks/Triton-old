@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee;
+    color: #434344;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Page Layout */
+.container {
+    
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+
+/* Header */
+
+header,
+footer {
+    flex: 1 100%;
+    color: #9f9c9c;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b0e0ea;
+    display: flex;
+    justify-content: space-between;
+}
+
+    header nav ul {
+        display: flex;
+        align-items: baseline;
+        list-style-type: none;
+    }
+
+    header nav li {
+        margin-right: 15px;
+    }
+
+
+/* Main Section */
+
+
+.main {
+    flex: 2;
+    margin-right: 0;
+    margin-bottom: 60px;
+}
+
+.switch-holder {
+    max-width: 300px; 
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,.7), 10px 10px 10px rgba(0,0,0, .3), inset 8px 8px 15px rgba(255,255,255,.7), inset 10px 10px 10px rgba(0,0,0, .3);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-label {
+    width: 150px;
+}
+
+    .switch-label i {
+        margin-right: 5px;
+    }
+
+.switch-toggle {
+    height: 40px;
+}
+
+    .switch-toggle input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -2;
+    }
+
+        .switch-toggle input[type="checkbox"] + label {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0;
+            cursor: pointer;
+            box-shadow: inset -8px -8px 15px rgba(255,255,255,.6), inset 10px 10px 10px rgba(0,0,0, .25);
+        }
+
+            .switch-toggle input[type="checkbox"] + label::before {
+                position: absolute;
+                content: 'OFF';
+                font-size: 13px;
+                text-align: center;
+                line-height: 25px;
+                top: 8px;
+                left: 8px;
+                width: 45px;
+                height: 25px;
+                border-radius: 20px;
+                background-color: #d1dad3;
+                box-shadow: -3px -3px 5px rgba(255,255,255,.5), 3px 3px 5px rgba(0,0,0, .25);
+                transition: .3s ease-in-out;
+            }
+
+        .switch-toggle input[type="checkbox"]:checked + label::before {
+            left: 50%;
+            content: 'ON';
+            color: #fff;
+            background-color: #00b33c;
+            box-shadow: -3px -3px 5px rgba(255,255,255,.5), 3px 3px 5px #00b33c;
+        }
+
+    .main h2 {
+        font-size: 32px;
+        margin: 1rem 0;
+        color: #50c6db;
+    }
+
+    .main p {
+        font-size: 1rem;
+        margin-bottom: .75rem;
+    }
+
+/* Sidebar */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 1px;
+  }
+
+    .grid-item {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-item-manifoldandtanks {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px;
+        text-align: center;
+    }
+        .grid-container-manifoldandtanks {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 1px;
+        }
+            .grid-item-manifold {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 1px;
+                font-size: 30px;
+            }
+            .grid-item-tanks {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 1px;
+                font-size: 30px; 
+            }
+                .grid-container-N2Otank {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    background-color: white;
+                    padding-bottom: 50px;
+                }
+                    .grid-item-N2Oweight {
+                        display: grid;
+                        justify-content: center;
+                        align-content: center;
+                        background-color: white;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        padding: 1px;
+                        font-size: 30px; 
+                    }
+                    .grid-item-N2Otemp {
+                        display: grid;
+                        justify-content: center;
+                        align-content: center;
+                        background-color: white;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        padding: 1px;
+                        font-size: 30px; 
+                    }
+
+    .grid-item-venturiandchamber {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 1px;
+        font-size: 30px; 
+    }
+        .grid-container-venturiandchamber {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 1px;
+        }
+            .grid-item-venturis {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 30px;
+                font-size: 30px; 
+            }
+
+                .grid-container-venturi1 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: white;
+                    padding-bottom: 50px;
+                }
+        
+                .grid-container-venturi2 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: white;
+                    padding-top: 50px;
+                }
+
+            .grid-item-chamber {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 30px;
+                font-size: 30px; 
+            }
+/* Footer */
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #9f9c9c;
+}
+
+    footer p {
+        color: #434344;
+        font-size: 12px;
+        padding: 10px;
+    }
