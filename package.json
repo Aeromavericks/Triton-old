@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "canvas-gauges": "^2.1.7-radial",
     "flask": "^0.2.10"
   }
 }
